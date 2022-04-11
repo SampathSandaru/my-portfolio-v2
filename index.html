@@ -201,7 +201,7 @@
                         <h3>Technical Skills</h3>
                         <span class="title mt-2">Tools & Frameworks</span>
                         <p>
-                            Bootstrap, Laravel, CodeIgniter, Spring boot, Flask, Vue.js, Flutter, Firebase, Google APIs,
+                            Bootstrap, Laravel, CodeIgniter, Spring boot, Flask, React js, Material ui, Firebase, Google APIs,
                             Selenium
                         </p>
                         <span class="title">Familiar IDEs</span>
@@ -400,6 +400,62 @@
     <!-- projects -->
 
 
+    <div class="projects" id="hdreels">
+        <div class="frame">
+
+            <div class="card" style="width: 40rem;">
+                <div class="window-top">
+                    <span class="close"><i class="fas fa-times"></i></span>
+                    <span class="back btnactive backtoaccomplishments"><i class="fas fa-undo"></i></span>
+                </div>
+                <div class="card-body">
+
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h3>HD Reels - Movie app</h3>
+                        </div>
+                    </div>
+
+                    <div class="row mt-3">
+                        <div class="col-md-3 logoicon">
+                            <img src="images/hdreels.png">
+                        </div>
+                        <div class="col-md-9">
+                            <p>
+                                HD Reels is a lightweight web application and It provides any type of movie (eg: Action, Adventure, Horror).
+                                It is powered by YTS API endpoints (https://yts.mx/api).
+                            </p>
+                            <p class="technologies">
+                                Used Technologies - React JS, Material-UI v5.0.0, Netilfy hosting services
+                            </p>
+                            <div class="mt-2">
+                                <p>
+                                    <a href="https://hdreels.netlify.app/" target="blank"
+                                        class="card-link text-white text-decoration-none"><i class="fa fa-globe"
+                                            aria-hidden="true"></i> hdreels.netlify.app</a>
+                                    <span class="float-end text-secondary">Sep 2021</span>
+                                </p>
+                            </div>
+                            <div>
+                                <center>
+                                    <button class="inactive-btn">Previous</button>
+                                    <button class="button nav_to_slet">Next</button>
+                                </center>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+        </div>
+    </div>
+
+
+
+
     <div class="projects" id="slet">
         <div class="frame">
 
@@ -440,7 +496,7 @@
                             </div>
                             <div>
                                 <center>
-                                    <button class="inactive-btn">Previous</button>
+                                    <button class="button nav_to_hdreels">Previous</button>
                                     <button class="button nav_to_livemart">Next</button>
                                 </center>
                             </div>
@@ -1059,7 +1115,7 @@
                                         class="social-icons"><i class="fab fa-instagram"></i></a></li>
                                 <li><a href="https://www.youtube.com/channel/UClyb25zvMD6_NyaAdE777Ug" target="_blank"
                                         class="social-icons"><i class="fab fa-youtube"></i></a></li>
-                                <li><a href="https://wa.me/0784446639" target="_blank" class="social-icons"><i
+                                <li><a href="https://wa.me/+940784446639?text=Hi%20Ruvindu" target="_blank" class="social-icons"><i
                                             class="fab fa-whatsapp"></i></a></li>
                             </ul>
                         </center>
@@ -1155,11 +1211,18 @@
         $("#nav_to_projects").on("click", function () {
             $(".home").hide();
             $('.accomplishments').hide();
-            $('#slet').show();
+            $('#hdreels').show();
+        });
+
+        $(".nav_to_hdreels").on("click", function () {
+            $(".home").hide();
+            $('#slet').hide();
+            $('#hdreels').show();
         });
 
         $(".nav_to_slet").on("click", function () {
             $(".home").hide();
+            $('#hdreels').hide();
             $('#livemart').hide();
             $('#slet').show();
         });
